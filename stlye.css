@@ -1,0 +1,118 @@
+body{
+    text-align: center;
+}
+.clock{
+    width: 500px;
+    height: 500px;
+    background: lightseagreen;
+    display: inline-block;  
+    border: 10px solid black;
+    padding: 20px;
+    border-radius: 500px;
+}
+.sec{
+    height: 250px;
+    width: 5px;
+    left: 245px;
+    background: red;
+    z-index: 3;
+    animation:sec_anim 60s linear infinite;
+}
+
+.min{
+    height: 250px;
+    width: 10px;
+    background: black;
+    left:240px ;
+    top: -250px;
+    z-index: 2;
+    animation: min_anim 3600s linear infinite;
+}
+
+.hour{
+    height: 100px;
+    width: 14px;
+    left: 240px;
+    top: -430px;
+    background: red;
+    z-index: 1;
+    animation: hour_anim 43200s linear infinite;
+}
+
+.sec, .min, .hour{
+    line-height: 45px;
+    position: relative;
+    transform-origin: bottom;
+} 
+
+
+@keyframes sec_anim{
+    from{transform:rotatez(0deg) ;}
+    to{transform: rotatez(360deg);}
+}
+@keyframes min_anim{
+    from{transform:rotatez(0deg) ;}
+    to{transform: rotatez(360deg);}
+}
+@keyframes hour_anim{
+    from{transform:rotatez(0deg) ;}
+    to{transform: rotatez(360deg);}
+}
+
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve{
+    font-family: arial ;
+    font-size: 3em;
+    position: relative;
+    color: red;
+    text-shadow: 0 0 10px white;
+    z-index: 0;
+}
+.one{
+    top: -590px;
+    left: 123px;
+}
+.two{
+    top: -570px;
+    left: 199px;
+}
+.three{
+    top: -501px;
+    left: 243px;
+}
+.four{
+    top: -430px;
+    left: 219px;
+}
+.five{
+    top: -399px;
+    left: 150px;
+}
+.six{
+    top: -400px;
+    left: 0px;
+}
+.seven{
+    top: -490px;
+    left: -119px;
+}
+.eight{
+    top: -640px;
+    left: -214px;
+}
+.nine{
+    top: -810px;
+    left: -243px;
+}
+.ten{
+    top: -980px;
+    left: -213px;
+}
+.eleven{
+    top: -1131px;
+    left: -133px;
+}
+.twelve{
+    top: -1220px;
+    left: 0px;
+}
